@@ -12,5 +12,7 @@ int _pchar(char c);
 int _printf(const char *format, ...);
 void print_bi(unsigned int uint);
 int print_buf(const char *input);
+int print_pt(va_list val);
+int print_hex_extra(unsigned long int num);
 
 #endif
