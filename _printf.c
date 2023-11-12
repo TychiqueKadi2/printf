@@ -11,7 +11,7 @@ int _printf(const char * const format, ...)
 		{"%%", _print_37},
 		{"%i", _print_i}, {"%d", _print_d}, {"%r", _print_revs},
 		{"%R", _print_rot13}, {"%b", _print_bi},
-		{"%u", _print_unit},
+		{"%u", _print_uint},
 		{"%o", _print_octa}, {"%x", _print_hexa}, {"%X", _print_HEXA},
 		{"%S", _print_string}, {"%p", _print_point}
 	};
@@ -24,6 +24,7 @@ int _printf(const char * const format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	
+Here:
 	while (format[i] != '\0')
 	{
 		j = 13;

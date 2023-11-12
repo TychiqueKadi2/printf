@@ -6,8 +6,8 @@
  */
 int _print_hexa(va_list val)
 {
-	int i;
-	int *array;
+	int a;
+	int *ary;
 	int count = 0;
 	unsigned int num = va_arg(val, unsigned int);
 	unsigned int tem = num;
@@ -15,22 +15,22 @@ int _print_hexa(va_list val)
 	while (num / 16 != 0)
 	{
 		num /= 16;
-		counter++;
+		count++;
 	}
-	counter++;
-	array = malloc(counter * sizeof(int));
+	count++;
+	ary = malloc(count * sizeof(int));
 	
-	for (i = 0; i < counter; i++)
+	for (a = 0; a < count; a++)
 	{
-		array[i] = tem % 16;
+		ary[a] = tem % 16;
 		tem /= 16;
 	}
-	for (i = counter - 1; i >= 0; i--)
+	for (a = count - 1; a >= 0; a--)
 	{
-		if (array[i] > 9)
-			array[i] = array[i] + 39;
-		_pchar(array[i] + '0');
+		if (ary[a] > 9)
+			ary[a] = ary[a] + 39;
+		_pchar(ary[a] + '0');
 	}
-	free(array);
-	return (counter);
+	free(ary);
+	return (count);
 }

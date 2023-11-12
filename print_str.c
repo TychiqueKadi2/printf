@@ -1,29 +1,29 @@
 #include "main.h"
 /**
- * _print_s - print a string
- * @val: argument
- * Return: length of string
+ * print_s - print a string.
+ * @val: argument.
+ * Return: the length of the string.
  */
+
 int _print_s(va_list val)
 {
 	char *s;
-	int, len;
+	int a, l;
 
-	s = va_arg(val, char*);
-
+	s = va_arg(val, char *);
 	if (s == NULL)
 	{
 		s = "(null)";
-		len = strlen(s);
-		for (i = 0; i < len; i++)
-			_pchar (s[i]);
-		return (len);
+		l = _strlen(s);
+		for (a = 0; a < l; a++)
+			_pchar(s[a]);
+		return (l);
 	}
 	else
 	{
-		len = _strlen(s);
-		for (i = 0; i < len; i++)
-			_pchar(s[i]);
-		return (len);
+		l = _strlen(s);
+		for (a = 0; a < l; a++)
+			_pchar(s[a]);
+		return (l);
 	}
 }
