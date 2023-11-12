@@ -2,3 +2,5 @@ main.c
 print_hexa.c
 print_int.c
 _printf.c
+print_point.c
+
