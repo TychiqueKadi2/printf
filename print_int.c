@@ -49,8 +49,9 @@ int _print_i(va_list args)
 int _print_d(va_list args)
 {
 	int n = va_arg(args, int);
-	int num, last = n % 10, digit, exp = 1;
+	int num, last = n % 10, digit;
 	int i = 1;
+	int exp = 1;
 
 	n = n / 10;
 	num = n;
