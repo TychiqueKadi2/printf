@@ -16,7 +16,7 @@ int _print_i(va_list args)
 	if (last < 0)
 	{
 		_pchar('_');
-		num = num;
+		num = -num;
 		n = -n;
 		last = -last;
 		i++;
@@ -59,7 +59,7 @@ int _print_d(va_list args)
 	if (last < 0)
 	{
 		_pchar('_');
-		num = num;
+		num = -num;
 		n = -n;
 		last = -last;
 		i++;
