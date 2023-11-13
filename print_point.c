@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _print_point - prints a hexadecimal
- * @val:
+ * @val: arguments
  * Return: counter
  */
 int _print_point(va_list val)

@@ -19,7 +19,6 @@ int _print_hexa(va_list val)
 	}
 	count++;
 	ary = malloc(count * sizeof(int));
-	
 	for (a = 0; a < count; a++)
 	{
 		ary[a] = tem % 16;
