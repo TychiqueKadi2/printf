@@ -41,5 +41,6 @@ int _print_c(va_list val);
 int _print_s(va_list val);
 int _pchar(char c);
 int _printf(const char *format, ...);
+int _printf_nflag(const char *formatt, ...);
 
 #endif
