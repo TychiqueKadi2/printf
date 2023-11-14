@@ -1,14 +1,15 @@
 #include "main.h"
 /**
- * _print_i - prints integer
- * @args: argument to print
- * Return: integer
+ *_print_d - prints decimal
+ * @args: arguments
+ * Return: count
  */
-int _print_i(va_list args)
+int _print_d(va_list args)
 {
 	int n = va_arg(args, int);
-	int num, last = n % 10, digit, exp = 1;
+	int num, last = n % 10, digit;
 	int i = 1;
+	int exp = 1;
 
 	n = n / 10;
 	num = n;
@@ -42,16 +43,15 @@ int _print_i(va_list args)
 	return (i);
 }
 /**
- * _print_d - prints decimal
- * @args: arguments
- * Return: count
+ * _print_i - prints integer
+ * @args: argument to print
+ * Return: integer
  */
-int _print_d(va_list args)
+int _print_i(va_list args)
 {
 	int n = va_arg(args, int);
-	int num, last = n % 10, digit;
+	int num, last = n % 10, digit, exp = 1;
 	int i = 1;
-	int exp = 1;
 
 	n = n / 10;
 	num = n;
